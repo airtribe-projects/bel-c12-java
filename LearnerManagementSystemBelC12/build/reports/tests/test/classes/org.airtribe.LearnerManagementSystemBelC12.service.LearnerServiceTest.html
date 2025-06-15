@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - LearnerServiceTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>LearnerServiceTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.airtribe.LearnerManagementSystemBelC12.service.html">org.airtribe.LearnerManagementSystemBelC12.service</a> &gt; LearnerServiceTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">2</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.072s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">33%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Failed tests</a>
+</li>
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard output</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="testFindLearnerById_successfully()"></a>
+<h3 class="failures">testFindLearnerById_successfully()</h3>
+<span class="code">
+<pre>org.opentest4j.AssertionFailedError: expected: &lt;test2&gt; but was: &lt;test&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at app//org.airtribe.LearnerManagementSystemBelC12.service.LearnerServiceTest.testFindLearnerById_successfully(LearnerServiceTest.java:45)
+	at java.base@17.0.5/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base@17.0.5/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@17.0.5/java.util.ArrayList.forEach(ArrayList.java:1511)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testFindLearnerById_unhappyCase()"></a>
+<h3 class="failures">testFindLearnerById_unhappyCase()</h3>
+<span class="code">
+<pre>org.airtribe.LearnerManagementSystemBelC12.Exception.LearnerNotFoundException: Learner not found with ID: 1
+	at app//org.airtribe.LearnerManagementSystemBelC12.service.LearnerService.getLearnerById(LearnerService.java:43)
+	at app//org.airtribe.LearnerManagementSystemBelC12.service.LearnerServiceTest.testFindLearnerById_unhappyCase(LearnerServiceTest.java:55)
+	at java.base@17.0.5/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base@17.0.5/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@17.0.5/java.util.ArrayList.forEach(ArrayList.java:1511)
+</pre>
+</span>
+</div>
+</div>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">testFindLearnerById_successfully()</td>
+<td class="failures">0.009s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testFindLearnerById_unhappyCase()</td>
+<td class="failures">0.054s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">testLearnerSavedSuccessfully()</td>
+<td class="success">0.009s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>22:26:37.715 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [org.airtribe.LearnerManagementSystemBelC12.service.LearnerServiceTest]: LearnerServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:26:37.778 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration org.airtribe.LearnerManagementSystemBelC12.LearnerManagementSystemBelC12Application for test class org.airtribe.LearnerManagementSystemBelC12.service.LearnerServiceTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.5)
+
+2025-06-13T22:26:38.012+05:30  INFO 36017 --- [LearnerManagementSystemBelC12] [    Test worker] o.a.L.service.LearnerServiceTest         : Starting LearnerServiceTest using Java 17.0.5 with PID 36017 (started by ppanjwan in /Users/ppanjwan/Downloads/LearnerManagementSystemBelC12)
+2025-06-13T22:26:38.013+05:30  INFO 36017 --- [LearnerManagementSystemBelC12] [    Test worker] o.a.L.service.LearnerServiceTest         : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2025-06-13T22:26:38.535+05:30  INFO 36017 --- [LearnerManagementSystemBelC12] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-13T22:26:38.574+05:30  INFO 36017 --- [LearnerManagementSystemBelC12] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 3 JPA repository interfaces.
+2025-06-13T22:26:39.070+05:30  INFO 36017 --- [LearnerManagementSystemBelC12] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-13T22:26:39.106+05:30  INFO 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-13T22:26:39.130+05:30  INFO 36017 --- [LearnerManagementSystemBelC12] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-13T22:26:39.176+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -&gt; org.hibernate.type.BasicTypeReference@3b33fff9
+2025-06-13T22:26:39.177+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -&gt; org.hibernate.type.BasicTypeReference@3b33fff9
+2025-06-13T22:26:39.177+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -&gt; org.hibernate.type.BasicTypeReference@3b33fff9
+2025-06-13T22:26:39.177+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -&gt; org.hibernate.type.BasicTypeReference@fd87c22
+2025-06-13T22:26:39.177+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.NumericBooleanConverter -&gt; org.hibernate.type.BasicTypeReference@fd87c22
+2025-06-13T22:26:39.177+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -&gt; org.hibernate.type.BasicTypeReference@fee881
+2025-06-13T22:26:39.177+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.TrueFalseConverter -&gt; org.hibernate.type.BasicTypeReference@fee881
+2025-06-13T22:26:39.177+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -&gt; org.hibernate.type.BasicTypeReference@1ff463bb
+2025-06-13T22:26:39.177+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.YesNoConverter -&gt; org.hibernate.type.BasicTypeReference@1ff463bb
+2025-06-13T22:26:39.177+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -&gt; org.hibernate.type.BasicTypeReference@3b9c9b8b
+2025-06-13T22:26:39.177+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -&gt; org.hibernate.type.BasicTypeReference@3b9c9b8b
+2025-06-13T22:26:39.177+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -&gt; org.hibernate.type.BasicTypeReference@3b9c9b8b
+2025-06-13T22:26:39.178+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -&gt; org.hibernate.type.BasicTypeReference@7769d9b6
+2025-06-13T22:26:39.178+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -&gt; org.hibernate.type.BasicTypeReference@7769d9b6
+2025-06-13T22:26:39.178+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -&gt; org.hibernate.type.BasicTypeReference@7769d9b6
+2025-06-13T22:26:39.178+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary_wrapper -&gt; org.hibernate.type.BasicTypeReference@636e4bf8
+2025-06-13T22:26:39.178+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -&gt; org.hibernate.type.BasicTypeReference@636e4bf8
+2025-06-13T22:26:39.178+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -&gt; org.hibernate.type.BasicTypeReference@5af38a4a
+2025-06-13T22:26:39.178+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -&gt; org.hibernate.type.BasicTypeReference@7e1a9173
+2025-06-13T22:26:39.178+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -&gt; org.hibernate.type.BasicTypeReference@7e1a9173
+2025-06-13T22:26:39.178+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -&gt; org.hibernate.type.BasicTypeReference@4ca0b9b1
+2025-06-13T22:26:39.178+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob_wrapper -&gt; org.hibernate.type.BasicTypeReference@5d800a56
+2025-06-13T22:26:39.178+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -&gt; org.hibernate.type.BasicTypeReference@1be77a76
+2025-06-13T22:26:39.178+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -&gt; org.hibernate.type.BasicTypeReference@1be77a76
+2025-06-13T22:26:39.179+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -&gt; org.hibernate.type.BasicTypeReference@1be77a76
+2025-06-13T22:26:39.179+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -&gt; org.hibernate.type.BasicTypeReference@315cf170
+2025-06-13T22:26:39.179+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -&gt; org.hibernate.type.BasicTypeReference@315cf170
+2025-06-13T22:26:39.179+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -&gt; org.hibernate.type.BasicTypeReference@315cf170
+2025-06-13T22:26:39.179+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -&gt; org.hibernate.type.BasicTypeReference@7878bbdb
+2025-06-13T22:26:39.179+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -&gt; org.hibernate.type.BasicTypeReference@7878bbdb
+2025-06-13T22:26:39.179+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -&gt; org.hibernate.type.BasicTypeReference@7878bbdb
+2025-06-13T22:26:39.179+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -&gt; org.hibernate.type.BasicTypeReference@25f7cc38
+2025-06-13T22:26:39.179+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -&gt; org.hibernate.type.BasicTypeReference@25f7cc38
+2025-06-13T22:26:39.179+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -&gt; org.hibernate.type.BasicTypeReference@25f7cc38
+2025-06-13T22:26:39.179+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -&gt; org.hibernate.type.BasicTypeReference@563263a
+2025-06-13T22:26:39.179+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -&gt; org.hibernate.type.BasicTypeReference@563263a
+2025-06-13T22:26:39.179+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -&gt; org.hibernate.type.BasicTypeReference@563263a
+2025-06-13T22:26:39.179+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -&gt; org.hibernate.type.BasicTypeReference@53e28097
+2025-06-13T22:26:39.180+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -&gt; org.hibernate.type.BasicTypeReference@53e28097
+2025-06-13T22:26:39.180+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -&gt; org.hibernate.type.BasicTypeReference@6e794f53
+2025-06-13T22:26:39.180+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -&gt; org.hibernate.type.BasicTypeReference@6e794f53
+2025-06-13T22:26:39.180+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -&gt; org.hibernate.type.BasicTypeReference@75f4d8a8
+2025-06-13T22:26:39.180+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -&gt; org.hibernate.type.BasicTypeReference@75f4d8a8
+2025-06-13T22:26:39.180+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -&gt; org.hibernate.type.BasicTypeReference@75f4d8a8
+2025-06-13T22:26:39.180+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration character_nchar -&gt; org.hibernate.type.BasicTypeReference@69ba72da
+2025-06-13T22:26:39.180+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -&gt; org.hibernate.type.BasicTypeReference@2e1ba142
+2025-06-13T22:26:39.180+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -&gt; org.hibernate.type.BasicTypeReference@2e1ba142
+2025-06-13T22:26:39.180+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -&gt; org.hibernate.type.BasicTypeReference@abc7005
+2025-06-13T22:26:39.180+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -&gt; org.hibernate.type.BasicTypeReference@595ec862
+2025-06-13T22:26:39.181+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -&gt; org.hibernate.type.BasicTypeReference@595ec862
+2025-06-13T22:26:39.181+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -&gt; org.hibernate.type.BasicTypeReference@595ec862
+2025-06-13T22:26:39.181+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -&gt; org.hibernate.type.BasicTypeReference@63c84d31
+2025-06-13T22:26:39.181+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -&gt; org.hibernate.type.BasicTypeReference@102af1bb
+2025-06-13T22:26:39.181+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -&gt; org.hibernate.type.BasicTypeReference@797f97e3
+2025-06-13T22:26:39.181+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -&gt; org.hibernate.type.BasicTypeReference@56cd5d76
+2025-06-13T22:26:39.181+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -&gt; org.hibernate.type.BasicTypeReference@56cd5d76
+2025-06-13T22:26:39.181+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -&gt; org.hibernate.type.BasicTypeReference@77cd235b
+2025-06-13T22:26:39.182+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -&gt; org.hibernate.type.BasicTypeReference@77cd235b
+2025-06-13T22:26:39.182+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -&gt; org.hibernate.type.BasicTypeReference@302da330
+2025-06-13T22:26:39.182+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_char_array -&gt; org.hibernate.type.BasicTypeReference@3568ea59
+2025-06-13T22:26:39.182+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_character_array -&gt; org.hibernate.type.BasicTypeReference@9f2376f
+2025-06-13T22:26:39.182+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -&gt; org.hibernate.type.BasicTypeReference@173b1af1
+2025-06-13T22:26:39.182+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_character_array -&gt; org.hibernate.type.BasicTypeReference@4a520f05
+2025-06-13T22:26:39.183+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_char_array -&gt; org.hibernate.type.BasicTypeReference@389a1e34
+2025-06-13T22:26:39.183+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -&gt; org.hibernate.type.BasicTypeReference@204b0f07
+2025-06-13T22:26:39.183+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -&gt; org.hibernate.type.BasicTypeReference@204b0f07
+2025-06-13T22:26:39.183+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -&gt; org.hibernate.type.BasicTypeReference@6f68756d
+2025-06-13T22:26:39.183+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -&gt; org.hibernate.type.BasicTypeReference@6f68756d
+2025-06-13T22:26:39.183+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -&gt; org.hibernate.type.BasicTypeReference@359865a2
+2025-06-13T22:26:39.183+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -&gt; org.hibernate.type.BasicTypeReference@359865a2
+2025-06-13T22:26:39.183+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -&gt; org.hibernate.type.BasicTypeReference@5d9bb69b
+2025-06-13T22:26:39.183+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -&gt; org.hibernate.type.BasicTypeReference@5d9bb69b
+2025-06-13T22:26:39.183+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -&gt; org.hibernate.type.BasicTypeReference@25d0b918
+2025-06-13T22:26:39.184+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -&gt; org.hibernate.type.BasicTypeReference@25d0b918
+2025-06-13T22:26:39.184+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithTimezone -&gt; org.hibernate.type.BasicTypeReference@9bf63d2
+2025-06-13T22:26:39.184+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithoutTimezone -&gt; org.hibernate.type.BasicTypeReference@7ffcb232
+2025-06-13T22:26:39.184+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -&gt; org.hibernate.type.BasicTypeReference@7f53fc38
+2025-06-13T22:26:39.184+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -&gt; org.hibernate.type.BasicTypeReference@7f53fc38
+2025-06-13T22:26:39.184+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeUtc -&gt; org.hibernate.type.BasicTypeReference@5feb82b3
+2025-06-13T22:26:39.184+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithTimezone -&gt; org.hibernate.type.BasicTypeReference@2d38db6f
+2025-06-13T22:26:39.184+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithoutTimezone -&gt; org.hibernate.type.BasicTypeReference@37cf91d8
+2025-06-13T22:26:39.184+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -&gt; org.hibernate.type.BasicTypeReference@571d0925
+2025-06-13T22:26:39.184+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -&gt; org.hibernate.type.BasicTypeReference@571d0925
+2025-06-13T22:26:39.184+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithTimezone -&gt; org.hibernate.type.BasicTypeReference@54e0f76f
+2025-06-13T22:26:39.184+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithoutTimezone -&gt; org.hibernate.type.BasicTypeReference@3fe8ad3f
+2025-06-13T22:26:39.184+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -&gt; org.hibernate.type.BasicTypeReference@7462ba4b
+2025-06-13T22:26:39.184+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -&gt; org.hibernate.type.BasicTypeReference@7462ba4b
+2025-06-13T22:26:39.184+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -&gt; org.hibernate.type.BasicTypeReference@4b09d1c3
+2025-06-13T22:26:39.184+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -&gt; org.hibernate.type.BasicTypeReference@4b09d1c3
+2025-06-13T22:26:39.184+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -&gt; org.hibernate.type.BasicTypeReference@18811c42
+2025-06-13T22:26:39.184+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -&gt; org.hibernate.type.BasicTypeReference@18811c42
+2025-06-13T22:26:39.184+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -&gt; org.hibernate.type.BasicTypeReference@18811c42
+2025-06-13T22:26:39.185+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -&gt; org.hibernate.type.BasicTypeReference@627acb38
+2025-06-13T22:26:39.185+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -&gt; org.hibernate.type.BasicTypeReference@627acb38
+2025-06-13T22:26:39.185+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -&gt; org.hibernate.type.BasicTypeReference@627acb38
+2025-06-13T22:26:39.185+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -&gt; org.hibernate.type.BasicTypeReference@32b95de
+2025-06-13T22:26:39.185+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -&gt; org.hibernate.type.BasicTypeReference@629cbb1
+2025-06-13T22:26:39.185+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration instant -&gt; org.hibernate.type.BasicTypeReference@165aa43a
+2025-06-13T22:26:39.185+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -&gt; org.hibernate.type.BasicTypeReference@165aa43a
+2025-06-13T22:26:39.185+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid -&gt; org.hibernate.type.BasicTypeReference@22cd8ec2
+2025-06-13T22:26:39.185+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -&gt; org.hibernate.type.BasicTypeReference@22cd8ec2
+2025-06-13T22:26:39.185+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration pg-uuid -&gt; org.hibernate.type.BasicTypeReference@22cd8ec2
+2025-06-13T22:26:39.185+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -&gt; org.hibernate.type.BasicTypeReference@7d977a20
+2025-06-13T22:26:39.185+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -&gt; org.hibernate.type.BasicTypeReference@35ab4260
+2025-06-13T22:26:39.186+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -&gt; org.hibernate.type.BasicTypeReference@76134b9b
+2025-06-13T22:26:39.186+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -&gt; org.hibernate.type.BasicTypeReference@76134b9b
+2025-06-13T22:26:39.186+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -&gt; org.hibernate.type.BasicTypeReference@38667005
+2025-06-13T22:26:39.186+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration Currency -&gt; org.hibernate.type.BasicTypeReference@38667005
+2025-06-13T22:26:39.186+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -&gt; org.hibernate.type.BasicTypeReference@38667005
+2025-06-13T22:26:39.186+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -&gt; org.hibernate.type.BasicTypeReference@7ee64b53
+2025-06-13T22:26:39.186+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -&gt; org.hibernate.type.BasicTypeReference@7ee64b53
+2025-06-13T22:26:39.186+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -&gt; org.hibernate.type.BasicTypeReference@1131aead
+2025-06-13T22:26:39.186+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.io.Serializable -&gt; org.hibernate.type.BasicTypeReference@1131aead
+2025-06-13T22:26:39.186+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -&gt; org.hibernate.type.BasicTypeReference@7d126083
+2025-06-13T22:26:39.186+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -&gt; org.hibernate.type.BasicTypeReference@7d126083
+2025-06-13T22:26:39.186+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZoneOffset -&gt; org.hibernate.type.BasicTypeReference@76ffc17c
+2025-06-13T22:26:39.186+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZoneOffset -&gt; org.hibernate.type.BasicTypeReference@76ffc17c
+2025-06-13T22:26:39.186+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -&gt; org.hibernate.type.BasicTypeReference@3a8fb023
+2025-06-13T22:26:39.187+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -&gt; org.hibernate.type.BasicTypeReference@3a8fb023
+2025-06-13T22:26:39.187+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration vector -&gt; org.hibernate.type.BasicTypeReference@26d73519
+2025-06-13T22:26:39.187+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration float_vector -&gt; org.hibernate.type.BasicTypeReference@48af5f38
+2025-06-13T22:26:39.188+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration double_vector -&gt; org.hibernate.type.BasicTypeReference@40538370
+2025-06-13T22:26:39.188+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte_vector -&gt; org.hibernate.type.BasicTypeReference@71a2df1
+2025-06-13T22:26:39.188+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -&gt; org.hibernate.type.BasicTypeReference@18faaff6
+2025-06-13T22:26:39.190+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -&gt; org.hibernate.type.JavaObjectType@1f60824e
+2025-06-13T22:26:39.190+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -&gt; org.hibernate.type.JavaObjectType@1f60824e
+2025-06-13T22:26:39.191+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration null -&gt; org.hibernate.type.NullType@1029cf9
+2025-06-13T22:26:39.191+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -&gt; org.hibernate.type.BasicTypeReference@1c0e4262
+2025-06-13T22:26:39.191+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -&gt; org.hibernate.type.BasicTypeReference@27dfd12b
+2025-06-13T22:26:39.191+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -&gt; org.hibernate.type.BasicTypeReference@4348fa35
+2025-06-13T22:26:39.191+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -&gt; org.hibernate.type.BasicTypeReference@563843f1
+2025-06-13T22:26:39.192+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -&gt; org.hibernate.type.BasicTypeReference@38cb1606
+2025-06-13T22:26:39.192+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_time -&gt; org.hibernate.type.BasicTypeReference@61c4cebd
+2025-06-13T22:26:39.192+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -&gt; org.hibernate.type.BasicTypeReference@655909e2
+2025-06-13T22:26:39.192+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -&gt; org.hibernate.type.BasicTypeReference@716ae973
+2025-06-13T22:26:39.334+05:30  INFO 36017 --- [LearnerManagementSystemBelC12] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-13T22:26:39.361+05:30  INFO 36017 --- [LearnerManagementSystemBelC12] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-13T22:26:39.608+05:30  INFO 36017 --- [LearnerManagementSystemBelC12] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4a9ff419
+2025-06-13T22:26:39.609+05:30  INFO 36017 --- [LearnerManagementSystemBelC12] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-13T22:26:39.648+05:30  WARN 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-13T22:26:39.659+05:30  INFO 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.39
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-13T22:26:39.663+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@776a7ec6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2d23a5be)
+2025-06-13T22:26:39.663+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@51aa2a58) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@726d8fa0)
+2025-06-13T22:26:39.663+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@56554365) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@666b1244)
+2025-06-13T22:26:39.663+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@66130c3b) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@789d8fd6)
+2025-06-13T22:26:39.663+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@42fa5cb) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3ae87e38)
+2025-06-13T22:26:39.664+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@44e4cf8a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@50930bff)
+2025-06-13T22:26:39.664+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@296bfddb) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@508b4f70)
+2025-06-13T22:26:39.664+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@32f14274) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7af56b26)
+2025-06-13T22:26:39.664+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@c86c486) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@67ceaa9)
+2025-06-13T22:26:39.665+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NCharTypeDescriptor) replaced previous registration(CharTypeDescriptor)
+2025-06-13T22:26:39.665+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NVarcharTypeDescriptor) replaced previous registration(VarcharTypeDescriptor)
+2025-06-13T22:26:39.666+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(LongNVarcharTypeDescriptor) replaced previous registration(LongVarcharTypeDescriptor)
+2025-06-13T22:26:39.667+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NClobTypeDescriptor(DEFAULT)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-06-13T22:26:39.669+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration null -&gt; org.hibernate.type.NullType@4b5cdd07
+2025-06-13T22:26:39.669+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Type registration key [null] overrode previous entry : `org.hibernate.type.NullType@1029cf9`
+2025-06-13T22:26:39.672+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.DurationType -&gt; basicType@1(java.time.Duration,3015)
+2025-06-13T22:26:39.672+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -&gt; basicType@1(java.time.Duration,3015)
+2025-06-13T22:26:39.672+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -&gt; basicType@1(java.time.Duration,3015)
+2025-06-13T22:26:39.674+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.OffsetDateTimeType -&gt; basicType@2(java.time.OffsetDateTime,3003)
+2025-06-13T22:26:39.675+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -&gt; basicType@2(java.time.OffsetDateTime,3003)
+2025-06-13T22:26:39.675+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -&gt; basicType@2(java.time.OffsetDateTime,3003)
+2025-06-13T22:26:39.675+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.ZonedDateTimeType -&gt; basicType@3(java.time.ZonedDateTime,3003)
+2025-06-13T22:26:39.675+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -&gt; basicType@3(java.time.ZonedDateTime,3003)
+2025-06-13T22:26:39.675+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -&gt; basicType@3(java.time.ZonedDateTime,3003)
+2025-06-13T22:26:39.675+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.OffsetTimeType -&gt; basicType@4(java.time.OffsetTime,3007)
+2025-06-13T22:26:39.675+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -&gt; basicType@4(java.time.OffsetTime,3007)
+2025-06-13T22:26:39.675+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -&gt; basicType@4(java.time.OffsetTime,3007)
+2025-06-13T22:26:39.676+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@5764d421] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@1237cade]
+2025-06-13T22:26:40.217+05:30  INFO 36017 --- [LearnerManagementSystemBelC12] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-13T22:26:40.218+05:30 DEBUG 36017 --- [LearnerManagementSystemBelC12] [    Test worker] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@5764d421] to SessionFactoryImplementor [org.hibernate.internal.SessionFactoryImpl@167ccc3c]
+2025-06-13T22:26:40.287+05:30 TRACE 36017 --- [LearnerManagementSystemBelC12] [    Test worker] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@167ccc3c] for TypeConfiguration
+2025-06-13T22:26:40.287+05:30  INFO 36017 --- [LearnerManagementSystemBelC12] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-13T22:26:40.635+05:30  WARN 36017 --- [LearnerManagementSystemBelC12] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-13T22:26:41.191+05:30  INFO 36017 --- [LearnerManagementSystemBelC12] [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/actuator'
+2025-06-13T22:26:41.248+05:30  INFO 36017 --- [LearnerManagementSystemBelC12] [    Test worker] o.a.L.service.LearnerServiceTest         : Started LearnerServiceTest in 3.389 seconds (process running for 4.032)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.13</a> at Jun 13, 2025, 10:26:41 PM</p>
+</div>
+</div>
+</body>
+</html>
